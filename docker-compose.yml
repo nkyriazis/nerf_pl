@@ -1,0 +1,8 @@
+services:
+  nerf:
+    build: .
+    runtime: nvidia
+    command: tail -F anything
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
